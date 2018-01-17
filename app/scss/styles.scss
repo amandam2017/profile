@@ -1,6 +1,6 @@
 @import '../scss/mixins'; 
 
-html,body{
+html,body {
     margin: 0;
     padding: 0;
 }
@@ -19,11 +19,11 @@ body {
 
 }
 
-p,h1,h2,h3,h4,h5,h6{
+p,h1,h2,h3,h4,h5,h6 {
     margin: 0;
 }
 
-p{
+p {
     padding: 10px 0;
 }
 
@@ -32,20 +32,20 @@ p{
     // box-sizing:border-box;
 }
 
-.container{
+.container {
     width: 100%;
     margin: 0 auto;
     background: transparent;
     flex: 1;
 }
 
-  .header:before{
+  .header:before {
       content:"";
       display: table;
       clear: both;
   } 
   
-  .header{
+  .header {
       background:$nav__bg-color;
       margin: 0;
       padding: 0;
@@ -72,7 +72,7 @@ p{
             position: relative;  
         }
 
-        .logo__image{
+        .logo__image {
             max-width: 200px;
 
             @include bp(md) {
@@ -82,14 +82,14 @@ p{
 
             }
 
-            & img{
+            & img {
                 width: 100%;
             }
 
         }
       }
 
-      &:after{
+      &:after {
         content: "";
         display: table;
         clear: both;
@@ -97,7 +97,7 @@ p{
   }
 
 
-.nav{
+.nav {
     display: none;
     text-align: center;
 
@@ -108,7 +108,7 @@ p{
     margin-left: 10px;
     margin-right: 40px;
 }
-    &__list{
+    &__list {
         margin:0;
         padding: 90px 0 0 0;
         background-color: #fff;
@@ -121,7 +121,7 @@ p{
         } 
     }
 
-        &__list-item{
+        &__list-item {
             float: none; 
             display: block; 
             list-style-type:none;
@@ -136,7 +136,7 @@ p{
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             }
 
-                &.active a{
+                &.active a {
                     background:transparent;
 
                     @include bp(md) {
@@ -145,7 +145,7 @@ p{
                     }
                 }
 
-                & a{
+                & a {
                 display: block;
                 padding: 10px 20px;
                 color: #255f12;
@@ -162,11 +162,11 @@ p{
         }
     }
 
-  .hidden-list{
+  .hidden-list {
       padding:0;
       display: none;
 
-      & li{
+      & li {
         background:purple;
         float: none;
         padding:1px;
@@ -174,19 +174,19 @@ p{
       }    
   } 
   
-  .nav__list li:hover .hidden-list{
+  .nav__list li:hover .hidden-list {
       display: block;
       height:0;
   }
 
 
-  .nav:after{
+  .nav:after {
       content: "";
       display: table;
       clear: both;
   }
 
-  .burger{
+  .burger {
     float:right;
     display: block;
     padding: 10px;
@@ -199,14 +199,14 @@ p{
 
 }
 
-    .burger__item{
+    .burger__item {
         width:40px;
         height:5px;
         background-color:#fff;
         margin:6px 0;
     }
 
-    .burger:after{
+    .burger:after {
       content:"";
       display:table;
       clear:both;
@@ -219,7 +219,7 @@ p{
 
 // I don't know where it fits I am coming back to this
 
-.background{
+.background {
     background-image: url('../images/img.jpg');
     background-color: #233267;
     overflow: hidden;
@@ -230,7 +230,7 @@ p{
     }
 }
 
-.profile__image{
+.profile__image {
     max-width: 100%;
     margin: 20px auto;
     text-align: center;
@@ -247,22 +247,22 @@ p{
         max-width: 30%;
     }
 
-    & img{
+    & img {
         width: 100%;
     }
 
-    & h4{
+    & h4 {
         font-size: 20px;
         line-height: 24px;
     }
 }
 
-.section__title--center{
+.section__title--center {
     @include section__title--center;
     margin: 0;
 }
 
-.section__title--padding{
+.section__title--padding {
     @include section__title--padding;
     margin: 0;
     color: #ef4926;
@@ -270,7 +270,7 @@ p{
     font-weight:600;
 }
 
-.inner__container{
+.inner__container {
     width: 65%;
     margin: 0 auto;
     background-color: #233267;
@@ -278,8 +278,29 @@ p{
     height: 55vh;
 }
 
-.section__about-me{
+.section__about-me {
     background-color: #fff;
     background-position: 0 60px;
     padding: 30px 0;
+}
+
+.academic__section {
+    background-image: url('../images/section.png');
+    width: 100%;
+    background-color: #233267;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.academic__images{
+    width: 100%;
+
+    @include bp(md) {
+        width: 490px;
+        margin: 0 auto;
+    }
+
+    img{
+        display: inline-block;
+    }
 }

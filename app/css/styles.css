@@ -200,3 +200,19 @@ p {
   background-color: #fff;
   background-position: 0 60px;
   padding: 30px 0; }
+
+.academic__section {
+  background-image: url("../images/section.png");
+  width: 100%;
+  background-color: #233267;
+  color: #fff;
+  padding: 30px 0; }
+
+.academic__images {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .academic__images {
+      width: 490px;
+      margin: 0 auto; } }
+  .academic__images img {
+    display: inline-block; }
