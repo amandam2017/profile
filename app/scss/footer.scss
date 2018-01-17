@@ -1,0 +1,167 @@
+@import '../scss/mixins'; 
+
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing:border-box;
+  }
+
+.col-3{
+    width: 100%;
+    float: none;
+    padding: 10px 0;
+
+    @include bp(lg) {
+        width: 33.33%;
+        float: left;
+        padding: 0;
+    }
+}
+
+
+.col-3:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+    color: #676060;
+}
+
+
+// SOCIAL ICONS
+.social:after{
+    content: "";
+    position: absolute;
+    left: 33%;
+    bottom: 0;
+    right: 33%;
+    height: 3px;
+    background: #2b4608;
+    display: block;
+}
+
+.social{
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    // border-bottom: 2px solid;
+    // width: 22%;
+    // margin: 0 auto;
+    &__icon{
+        border-radius: 50%;
+        background: transparent;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 30px 0;
+    }
+
+    &__icon:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    &__link{
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+    .fa{
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        line-height: 50px;
+
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+
+    .fa-facebook{
+        background: #3B5998;
+    }
+    .fa-linkedin{
+        background: #2a445d;
+    }
+    .fa-twitter{
+        background: #0084b4;
+    }
+    .fa-github{
+        background: #000;
+    }
+}
+
+.social:before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.footer{
+    background: #f5f5f5;
+    padding: 20px 0;
+    color: #676060;
+    font-size: 16px;
+    font-family: "proxima nova", "Helvetica Neue", Helvetica, Sans-serif;
+    position: relative;
+    -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+    .footer__container{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .footer__container:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .footer__nav{
+        display: block;
+        color: #676060;
+        text-align: center;
+
+        ul{
+            li{
+                float: none;
+                padding: 0 10px;
+                list-style: none;
+                display: none;
+
+                @include bp(lg) {
+                    float: left;
+                display: block;
+                }
+
+                a{
+                    margin: 20px;
+                }
+            }
+        }
+
+        ul:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+
+    .footer__link{
+        text-align: center;
+    }
+
+    .footer__social-icons{
+        text-align: center;
+    }

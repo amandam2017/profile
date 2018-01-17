@@ -13,6 +13,18 @@ body {
   min-height: 100vh;
   flex-direction: column; }
 
+.col-6 {
+  width: 100%;
+  float: none; }
+  @media (min-width: 768px) {
+    .col-6 {
+      width: 50%;
+      float: left; } }
+  .col-6:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
@@ -42,9 +54,7 @@ p {
     .header {
       background-color: rgba(35, 50, 103, 0.9);
       border: none;
-      height: 53.33px;
-      padding-top: 15px;
-      padding-bottom: 35px;
+      max-height: 75px;
       /* padding-left: 10px; */ } }
   .header__logo {
     line-height: 24px;
@@ -77,7 +87,7 @@ p {
     background-color: #fff; }
     @media (min-width: 1024px) {
       .nav__list {
-        padding-top: 20px;
+        padding-top: 25px;
         display: inline-block;
         background-color: transparent; } }
   .nav__list-item {
@@ -216,3 +226,7 @@ p {
       margin: 0 auto; } }
   .academic__images img {
     display: inline-block; }
+
+.skillset__section {
+  background-color: #fff;
+  padding: 30px 0; }
