@@ -1,0 +1,285 @@
+@import '../scss/mixins'; 
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    height: auto;
+    // opacity: 0.50;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+p{
+    padding: 10px 0;
+}
+
+*{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // box-sizing:border-box;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    background: transparent;
+    flex: 1;
+}
+
+  .header:before{
+      content:"";
+      display: table;
+      clear: both;
+  } 
+  
+  .header{
+      background:$nav__bg-color;
+      margin: 0;
+      padding: 0;
+      line-height: 0;
+      // position: relative;
+      // border: 2px solid;
+      // background-color: yellow;
+
+    @include bp(md) {
+        background-color: $nav__bg-color;
+        border: none;
+        height: 53.33px;
+        padding-top: 15px;
+        padding-bottom: 35px;
+        /* padding-left: 10px; */
+    }
+
+      &__logo {
+            line-height: 24px; 
+            float: left;
+
+        @include bp(md) {
+            line-height: 24px;
+            position: relative;  
+        }
+
+        .logo__image{
+            max-width: 200px;
+
+            @include bp(md) {
+                // position: absolute;
+                // top: 0;
+                // bottom: 0;
+
+            }
+
+            & img{
+                width: 100%;
+            }
+
+        }
+      }
+
+      &:after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+  }
+
+
+.nav{
+    display: none;
+    text-align: center;
+
+
+@include bp(lg) {
+    display: block;
+    float: right;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+    &__list{
+        margin:0;
+        padding: 90px 0 0 0;
+        background-color: #fff;
+        // display: none;
+
+        @include bp(lg) {
+            padding-top: 20px;
+            display: inline-block;
+            background-color: transparent;
+        } 
+    }
+
+        &__list-item{
+            float: none; 
+            display: block; 
+            list-style-type:none;
+            margin-right: 0px;
+            color: #255f12;
+
+            @include bp(md) {
+                float: left;
+                margin-left: 30px;
+                color: #fff;
+                font-size: 12px;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+
+                &.active a{
+                    background:transparent;
+
+                    @include bp(md) {
+                        color: white;
+                        border-bottom: 2px solid #e93e23;
+                    }
+                }
+
+                & a{
+                display: block;
+                padding: 10px 20px;
+                color: #255f12;
+                text-decoration: none;
+
+                @include bp(md) {
+                    padding:0;
+                    line-height: 25px;
+                    font-weight: 700;
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+
+  .hidden-list{
+      padding:0;
+      display: none;
+
+      & li{
+        background:purple;
+        float: none;
+        padding:1px;
+        line-height: 0;
+      }    
+  } 
+  
+  .nav__list li:hover .hidden-list{
+      display: block;
+      height:0;
+  }
+
+
+  .nav:after{
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  .burger{
+    float:right;
+    display: block;
+    padding: 10px;
+    background: transparent;
+
+    @include bp(lg) {
+       display: none;
+       padding:0; 
+    }
+
+}
+
+    .burger__item{
+        width:40px;
+        height:5px;
+        background-color:#fff;
+        margin:6px 0;
+    }
+
+    .burger:after{
+      content:"";
+      display:table;
+      clear:both;
+    }
+
+
+
+
+
+
+// I don't know where it fits I am coming back to this
+
+.background{
+    background-image: url('../images/img.jpg');
+    background-color: #233267;
+    overflow: hidden;
+    width: 100%;
+
+    img{
+        width: 100%;
+    }
+}
+
+.profile__image{
+    max-width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    position: relative;
+    z-index: 98;
+
+    @include bp(sm) {
+        max-width: 50%;
+    }
+
+     @include bp(lg) {
+        max-width: 30%;
+    }
+
+    & img{
+        width: 100%;
+    }
+
+    & h4{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.section__title--center{
+    @include section__title--center;
+    margin: 0;
+}
+
+.section__title--padding{
+    @include section__title--padding;
+    margin: 0;
+    color: #ef4926;
+    font-size: 32px;
+    font-weight:600;
+}
+
+.inner__container{
+    width: 65%;
+    margin: 0 auto;
+    background-color: #233267;
+    overflow: hidden;
+    height: 55vh;
+}
+
+.section__about-me{
+    background-color: #fff;
+    background-position: 0 60px;
+    padding: 30px 0;
+}

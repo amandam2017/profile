@@ -1,0 +1,109 @@
+    $bp-map: (
+        "xs": 320px,
+        "sm": 568px,
+        "md": 768px,
+        "lg": 1024px,
+        "xl": 1224px
+    );
+
+    $bp-xs: ('xs', map-get($bp-map, 'xs'));
+    $bp-sm: ('sm', map-get($bp-map, 'sm'));
+    $bp-md: ('md', map-get($bp-map, 'md'));
+    $bp-lg: ('lg', map-get($bp-map, 'lg'));
+    $bp-xl: ('xl', map-get($bp-map, 'xl'));
+
+    $bp-name-list: 'xs', 'sm', 'md', 'lg', 'xl';
+    $bp-list: ($bp-xs, $bp-sm, $bp-md, $bp-lg, $bp-xl);
+
+    @mixin bp($point) {
+
+    @if $point == xl {
+        @media (min-width: nth($bp-xl, 2)) {
+            @content;
+        }
+    } @else if $point == lg {
+        @media (min-width: nth($bp-lg, 2)) {
+            @content;
+        }
+    } @else if $point == md {
+        @media (min-width: nth($bp-md, 2)) {
+            @content;
+        }
+    } @else if $point == sm {
+        @media (min-width: nth($bp-sm, 2)) {
+            @content;
+        }
+    } @else if $point == xs {
+         @media (min-width: nth($bp-xs, 2)) {
+            @content;
+        }
+    } @else if $point == all {
+        @include bp(xs) {
+            @content;
+        }
+
+        @include bp(sm) {
+            @content;
+        }
+
+        @include bp(md) {
+            @content;
+        }
+
+        @include bp(lg) {
+            @content;
+        }
+
+    } @else {
+        @media (min-width: $point) {
+            @content;
+        }
+    }
+}
+
+
+// colors
+$text-color:#2b4608;
+$hover-background:#a57822;
+$hover-color:#4d4943;
+$nav__bg-color: #075000;
+
+$nav-color:#fff;
+$no-border: none;
+$hover-background:#000;
+$hover-color:#6e7b25;
+$active-background:#255f12;
+$mobile-active-background:#7ec766;
+$nav__bg-color: rgba(35, 50, 103, 0.9);
+
+  // font-size
+
+
+
+  // font-family
+
+
+  // text-align
+
+@mixin center{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@mixin section__title--center{
+    text-align: center;
+    // padding: 50px 0;
+    // margin: 0;
+}
+
+@mixin section__title--padding{
+    padding: 15px 0 25px 0;
+}
+
+// box-sizing
+@mixin box-sizing{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
