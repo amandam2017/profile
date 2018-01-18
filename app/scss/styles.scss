@@ -326,6 +326,7 @@ p {
         border: 1px solid #ccc;
         margin: 20px 0;
         padding:5px;
+        position: relative;
 
         &__image{
             max-width: 60px;
@@ -333,6 +334,25 @@ p {
             img{
                 max-width: 100%;
             }
+        }
+
+        span{
+            float:right;
+            right: 0;
+            background-color: red;
+            padding: 24px;
+            position: absolute;
+            top: 0;
+        }
+
+        p{
+            position: absolute;
+            top: 0;
+            padding: 15px 70px;
+        }
+
+        p,span{
+            display: inline-block;
         }
     }
 }

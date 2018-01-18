@@ -240,11 +240,25 @@ p {
   .skillset__languages .language {
     border: 1px solid #ccc;
     margin: 20px 0;
-    padding: 5px; }
+    padding: 5px;
+    position: relative; }
     .skillset__languages .language__image {
       max-width: 60px; }
       .skillset__languages .language__image img {
         max-width: 100%; }
+    .skillset__languages .language span {
+      float: right;
+      right: 0;
+      background-color: red;
+      padding: 24px;
+      position: absolute;
+      top: 0; }
+    .skillset__languages .language p {
+      position: absolute;
+      top: 0;
+      padding: 15px 70px; }
+    .skillset__languages .language p, .skillset__languages .language span {
+      display: inline-block; }
 
 .contact__section {
   background-color: #fff;
