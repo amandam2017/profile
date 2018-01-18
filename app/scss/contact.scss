@@ -1,4 +1,29 @@
-// @import '../scss/mixins'; 
+@import '../scss/mixins'; 
+
+.button{
+	background-color: #fff;
+	height: 100%;
+	padding: 20px 0;
+}
+
+.contact__button{
+	padding: 20px;
+    background: #e93e23;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px 2px;
+    color: #fff;
+    font-weight: 600;
+
+    @include bp(md) {
+    	float: right;
+    }
+}
+
+.contact__button:after{
+	content: "";
+	display: table;
+	clear: both;
+}
 
 // body{
 // 	background: #fff;
