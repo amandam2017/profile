@@ -9,7 +9,8 @@
   border-radius: 7px;
   box-shadow: 0 2px 5px 2px;
   color: #fff;
-  font-weight: 600; }
+  font-weight: 600;
+  float: none; }
   @media (min-width: 768px) {
     .contact__button {
       float: right; } }
