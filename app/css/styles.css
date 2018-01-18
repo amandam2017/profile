@@ -234,7 +234,7 @@ p {
 .skillset__languages {
   width: 100%; }
   .skillset__languages .language {
-    border: 2px solid red; }
+    border: 1px solid #ccc; }
 
 .contact__section {
   background-color: #fff;
