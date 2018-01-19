@@ -115,8 +115,32 @@
 
         <section class="inner__container contact__section">
 
-            <div class="button inner__container">
+            <div class="button inner__container" id="mybutton">
                 <a href="#" class="contact__button">Get Intouch</a>
+            </div>
+
+            <div class="modal" id="mymodal">
+                <div class="modal__title">
+                    <h2>Send me an email</h2>
+                    <button class="btnc" id="btnclose">close</button>
+                </div>
+
+                <form action="contact.php" method="POST" id="form">
+                    <div class="form__input">
+                        <input type="text" placeholder="name" name="user_name" required>
+                    </div>
+                    <div class="form__input">
+                        <input type="email" placeholder="email" name="user_mail" required>
+                    </div>
+
+                    <div class="textarea">  
+                        <textarea placeholder="message" name="user_message"></textarea>
+                    </div>
+
+                    <div class="submit">
+                        <input type="button" name="submit" class="submit__button" value="SUBMIT" onclick="return confirm('Are you sure?')">
+                    </div>
+                </form>
             </div>
 
             <div class="embeded__map">

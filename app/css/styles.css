@@ -250,7 +250,7 @@ p {
       float: right;
       right: 0;
       background-color: red;
-      padding: 24px;
+      padding: 25px;
       position: absolute;
       top: 0; }
     .skillset__languages .language p {
@@ -264,7 +264,8 @@ p {
   background-color: #fff;
   padding: 30px 0;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .embeded__map {
   width: 100%; }
