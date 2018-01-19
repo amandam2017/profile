@@ -236,7 +236,8 @@ p {
   height: 100%; }
 
 .skillset__languages {
-  width: 100%; }
+  width: 100%;
+  color: #fff; }
   .skillset__languages .language {
     border: 1px solid #ccc;
     margin: 20px 0;
@@ -249,14 +250,15 @@ p {
     .skillset__languages .language span {
       float: right;
       right: 0;
-      background-color: red;
+      background-color: #233267;
       padding: 25px;
       position: absolute;
       top: 0; }
     .skillset__languages .language p {
       position: absolute;
       top: 0;
-      padding: 15px 70px; }
+      padding: 15px 70px;
+      color: #404040; }
     .skillset__languages .language p, .skillset__languages .language span {
       display: inline-block; }
 

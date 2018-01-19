@@ -28,15 +28,51 @@
 
 .modal{
 	width: 500px;
-    height: 400px;
+    height: 500px;
     background-color: gray;
     position: fixed;
-    top: 0;
+    top: 20px;
     left: 30%;
     right: 30%;
     z-index: 98;
     overflow: auto;
     display: none;
+}
+
+.form:before{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.modal__title{
+	h2{
+		float: left;
+		padding:10px;
+		margin: 10px;
+		color: #fff;
+	}
+
+	button{
+		float: right;
+		padding: 10px;
+		margin: 10px;
+		border-radius: 50%;
+		outline: none;
+		background-color: gray;
+		border: #fff;
+		color: #fff;
+	}
+
+	button:hover{
+
+	}
+}
+
+.modal__title:after{
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .form{
@@ -55,9 +91,8 @@
 	    	width: 50%;
 	    	float: left;
 	    }
-	}
-	
-	& input{
+
+	    & input{
 		font-size: 14px;
 		padding: 10px;
 		box-sizing: border-box;
@@ -66,7 +101,14 @@
 		width: 100%;
 		outline: none;
 	}
-	& textarea{
+	}
+}
+	.textarea{
+	    float: left;
+	    padding: 10px;
+	    width: 100%;
+
+	    & textarea{
 		font-size: 14px;
 		padding: 10px 10px 50px;
 		box-sizing: border-box;
@@ -75,11 +117,6 @@
 		width: 100%;
 		outline: none;
 	}
-
-	& .textarea{
-	    float: left;
-	    padding: 10px;
-	    width: 100%;
 	}
 
 	.submit{
@@ -92,37 +129,14 @@
 		    background: #fff;
 		    cursor: pointer;
 		}
+
 		@include bp(md) {
 			text-align: center;
 			max-width: 150px;
 			margin: 0 auto;
 		}
 	}
-}
 
-.form:before{
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.modal__title{
-	h2{
-		float: left;
-	}
-
-	button{
-		float: right;
-		padding: 10px;
-		margin: 10px;
-	}
-}
-
-.modal__title:after{
-	content: "";
-	display: table;
-	clear: both;
-}
 
 // .form:after{
 // 	content: "";

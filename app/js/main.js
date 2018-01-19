@@ -59,11 +59,3 @@ btn.onclick = function() {
 btnclose.onclick = function() {
     mymodal.style.display = "none";
 }
-
-// var btn = document.getElementById('btnclose');
-// var modal = document.getElementById('form');
-
-// form.onclick = function() {
-//     modal.style.display = "none";
-// }
-

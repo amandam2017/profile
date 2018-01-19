@@ -321,6 +321,7 @@ p {
 
 .skillset__languages{
     width: 100%;
+    color: #fff;
 
     .language{
         border: 1px solid #ccc;
@@ -339,7 +340,7 @@ p {
         span{
             float:right;
             right: 0;
-            background-color: red;
+            background-color: #233267;
             padding: 25px;
             position: absolute;
             top: 0;
@@ -349,6 +350,7 @@ p {
             position: absolute;
             top: 0;
             padding: 15px 70px;
+            color: #404040;
         }
 
         p,span{
