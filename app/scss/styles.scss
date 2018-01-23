@@ -115,7 +115,7 @@ p {
     &__list {
         margin:0;
         padding: 90px 0 0 0;
-        background-color: #fff;
+        // background-color: #fff;
         // display: none;
 
         @include bp(lg) {
@@ -130,7 +130,9 @@ p {
             display: block; 
             list-style-type:none;
             margin-right: 0px;
-            color: #255f12;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+            padding:15px;
 
             @include bp(md) {
                 float: left;
@@ -138,6 +140,8 @@ p {
                 color: #fff;
                 font-size: 12px;
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                border-bottom: 0;
+                padding: 0;
             }
 
                 &.active a {
@@ -152,14 +156,13 @@ p {
                 & a {
                 display: block;
                 padding: 10px 20px;
-                color: #255f12;
+                font-weight: 700;
                 text-decoration: none;
+                color: #fff;
 
                 @include bp(md) {
                     padding:0;
                     line-height: 25px;
-                    font-weight: 700;
-                    color: #fff;
                 }
             }
 
