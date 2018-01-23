@@ -1,6 +1,22 @@
 @charset "UTF-8";
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
 .academic__section {
-  color: #fff; }
+  color: #fff;
+  height: 100%; }
 
 .academic-curriculumn__section {
   background-color: #fff;
@@ -17,3 +33,24 @@
       font-size: 18px; }
     .academic-curriculumn__section ul li:before {
       content: "• "; }
+
+.col-3 {
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .col-3 {
+      width: 33.33%;
+      float: left; } }
+  .col-3:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.achievement {
+  width: 100%;
+  max-height: 100%; }
+  .achievement__image {
+    padding: 10px; }
+    .achievement__image img {
+      width: 100%; }
+  .achievement .inner__container {
+    height: 100%; }
