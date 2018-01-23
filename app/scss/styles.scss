@@ -300,8 +300,12 @@ p {
     padding: 30px 0;
 }
 
-.academic__section {
+.section__background{
     background-image: url('../images/section.png');
+    background-color: rgba(35, 50, 103, 0.9);
+}
+
+.academic__section {
     width: 100%;
     background-color: #233267;
     color: #fff;
@@ -310,6 +314,7 @@ p {
 
 .academic__images{
     width: 100%;
+    text-align: center;
 
     @include bp(md) {
         width: 490px;
@@ -333,7 +338,7 @@ p {
     .language{
         border: 1px solid #ccc;
         float: left;
-        height: 100px;
+        // height: 100px;
         padding: 5px;
         margin: 20px 0;
 

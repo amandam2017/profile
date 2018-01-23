@@ -1,0 +1,26 @@
+.academic__section{
+	color: #fff;
+}
+
+.academic-curriculumn__section{
+	background-color: #fff;
+    background-position: 0 60px;
+    padding: 30px 0;
+
+		ul{
+			display: block;
+			width: 100%;
+			padding-right: 0;
+			text-align: center;
+
+			li{
+				display: inline;
+				padding:10px;
+				font-size: 18px;
+			}
+
+			li:before {
+			  content: "• ";
+			}
+		}
+}
