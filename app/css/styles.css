@@ -202,7 +202,6 @@ p {
 .inner__container {
   width: 400px;
   margin: 0 auto;
-  background-color: #233267;
   overflow: hidden;
   height: 100%; }
   @media (min-width: 768px) {
@@ -245,6 +244,9 @@ p {
   background-color: #fff;
   padding: 30px 0;
   height: 100%; }
+  @media (min-width: 1024px) {
+    .skillset__section {
+      width: 100%; } }
 
 .skillset__languages {
   width: 100%; }
@@ -269,13 +271,13 @@ p {
       float: right;
       width: 87.5px;
       height: 87.5px;
-      display: table;
+      display: inline-block;
       text-align: center;
-      line-height: 87.5px; }
+      line-height: 87.5px;
+      font-size: 11px; }
     .skillset__languages .language p {
-      display: flex; }
-    .skillset__languages .language span {
-      display: inline-block; }
+      display: block;
+      font-size: 12px; }
 
 .contact__section {
   background-color: #fff;

@@ -52,5 +52,7 @@ body {
     padding: 10px; }
     .achievement__image img {
       width: 100%; }
+    .achievement__image:hover {
+      opacity: .5; }
   .achievement .inner__container {
     height: 100%; }
