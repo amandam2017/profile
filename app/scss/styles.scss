@@ -130,8 +130,9 @@ p {
             display: block; 
             list-style-type:none;
             margin-right: 0px;
-            color: #fff;
-            border-bottom: 1px solid #fff;
+            color: rgba(35, 50, 103, 0.9);
+            border-bottom: 1px solid rgba(35, 50, 103, 0.9);
+            background-color: #fff;
             padding:15px;
 
             @include bp(md) {
@@ -142,6 +143,7 @@ p {
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
                 border-bottom: 0;
                 padding: 0;
+                background-color: transparent;
             }
 
                 &.active a {
@@ -158,11 +160,12 @@ p {
                 padding: 10px 20px;
                 font-weight: 700;
                 text-decoration: none;
-                color: #fff;
+                color: rgba(35, 50, 103, 0.9);
 
                 @include bp(md) {
                     padding:0;
                     line-height: 25px;
+                    color: #fff;
                 }
             }
 
