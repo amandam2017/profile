@@ -20,14 +20,14 @@ function myFunction() {
 }
 
 // nav
-function newpost() {
-    var x = document.getElementById("nav__list");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+// function newpost() {
+//     var x = document.getElementById("nav__list");
+//     if (x.style.display === "none") {
+//         x.style.display = "block";
+//     } else {
+//         x.style.display = "none";
+//     }
+// }
 // OR
 // var selector, elems, makeActive;
 

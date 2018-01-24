@@ -75,7 +75,7 @@ p {
 .nav {
   display: none;
   text-align: center; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .nav {
       display: block;
       float: right;
@@ -84,7 +84,7 @@ p {
   .nav__list {
     margin: 0;
     padding: 90px 0 0 0; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .nav__list {
         padding-top: 25px;
         display: inline-block;
@@ -123,19 +123,6 @@ p {
           padding: 0;
           line-height: 25px; } }
 
-.hidden-list {
-  padding: 0;
-  display: none; }
-  .hidden-list li {
-    background: purple;
-    float: none;
-    padding: 1px;
-    line-height: 0; }
-
-.nav__list li:hover .hidden-list {
-  display: block;
-  height: 0; }
-
 .nav:after {
   content: "";
   display: table;
@@ -146,7 +133,7 @@ p {
   display: block;
   padding: 10px;
   background: transparent; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .burger {
       display: none;
       padding: 0; } }
@@ -216,11 +203,6 @@ p {
       height: 55vh;
       width: 65%;
       max-width: 1000px; } }
-
-.section__about-me {
-  background-color: #fff;
-  background-position: 0 60px;
-  padding: 30px 0; }
 
 .section__background {
   background-image: url("../images/section.png");

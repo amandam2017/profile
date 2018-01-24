@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    
+
     <title>amanda maarman</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/academic.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 </head>
+
 <body>
     <header class="header">
         <div onclick="myFunction()" class="burger">
@@ -15,25 +21,22 @@
             <div class="burger__item"></div>
         </div>
 
-         <div class="header__logo">
+        <div class="header__logo">
             <div class="logo__image">
                 <img src="images/logo.png">
             </div>
             <!-- <h4>Amanda Maarman</h4> -->
         </div>
-        
+
         <nav id="newpost" class="nav">
             <ul class="nav__list">
                 <li class="nav__list-item"><a href="index.html" class="nav__link">Home</a></li>
                 <li class="nav__list-item active"><a href="about.html" class="nav__link">About</a></li>
                 <li class="nav__list-item"><a href="academic.html" class="nav__link">Academic</a></li>
-                <li class="nav__list-item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                <li class="nav__list-item"><a href="portfolio.html" class="nav__link" target="blank">Portfolio</a></li>
                 <li class="nav__list-item"><a href="skillset.html" class="nav__link">Skills Set</a>
-                    <!-- <ul class="hidden-list">
-                        <li><a href="#">if</a></li>
-                        <li><a href="#">else</a></li>
-                        <li><a href="#">else-if</a></li>
-                    </ul> -->
+                    <!--  <ul class="hidden-list"> -->
+
                 </li>
                 <li class="nav__list-item"><a href="contact.html" class="nav__link">Get Intouch</a></li>
             </ul>
@@ -43,7 +46,61 @@
 
 
     <div class="container">
-        
+        <section class="inner__container section__about-me">
+            <h1 class="section__title--center section__title--padding">About Me</h1>
+            <p class="about-me__desctription section__title--center">
+                I am a 26year old girl in Cape Town, I am passionate about solving problems and willing to learn. 2016 July, I decided to try coding at <a href="http://codespace.co.za/" target="blank">CodeSpace</a>, it was totally a new thing to me but I really had a great time playing around css animations and I ended up developing more interest in Front-end web development.</p>
+            <p>After my course completion, I was placed as a front end developer intern at Native VML in Cape Town, that's where I have grown and developed more love and interest in Front end because of the daily creative and inspirational work that was developed by the senior developers everyday.
+            </p>
+
+            <h4>What do I do when I am not coding?</h4>
+            <p>Either find me on the vineyards and on the tar road running. I sometimes spend time writing whatever comes across my mind at a certein time.</p>
+
+            <div class="resume">
+                <a href="pdf/Amanda Maarman CV.pdf" target="blank" class="resume__link">View Full Profile PDF</a>
+            </div>
+        </section>
     </div>
+    <div class="push-footer">
+        <div class="social">
+            <h2>Follow & Like Me On:</h2>
+            <div class="social__icon">
+                <a href="https://www.facebook.com/" class="social__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+            <div class="social__icon">
+                <a href="https://www.linkedin.com/in/amanda-maarman-27309886/" class="social__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+            <div class="social__icon">
+                <a href="#" class="social__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="social__icon">
+                <a href="https://github.com/amandam2017" class="social__link"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__container">
+
+                <div class="col-3 footer__link">
+                    <a href="#"><a href="#">327 Watergang, Kayamandi, STELLENBOSCH, 7600</a>
+                </div>
+
+                <div class="col-3 footer__nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="my-work.html">Portfolio</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3 footer__social-icons">
+                    <a href="#">amandamaarman19911@gmail.com</a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
