@@ -113,3 +113,17 @@ $nav__bg-color: rgba(35, 50, 103, 0.9);
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+// buttons
+
+@mixin button--small{
+    padding-top: 20px;
+    margin-top: 25px;
+}
+
+@mixin button--small__link{
+    padding: 20px;
+    background-color: #ef4926;
+    border-radius: 5px;
+    color: #fff;
+}

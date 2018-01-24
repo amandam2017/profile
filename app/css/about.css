@@ -4,10 +4,10 @@
   padding: 30px 0;
   height: 100%; }
 
-.resume {
+.button--small {
   padding-top: 20px;
   margin-top: 25px; }
-  .resume__link {
+  .button--small__link {
     padding: 20px;
     background-color: #ef4926;
     border-radius: 5px;
