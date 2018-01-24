@@ -33,6 +33,7 @@
                 <li class="nav__list-item"><a href="index.html" class="nav__link">Home</a></li>
                 <li class="nav__list-item active"><a href="about.html" class="nav__link">About</a></li>
                 <li class="nav__list-item"><a href="academic.html" class="nav__link">Academic</a></li>
+                <li class="nav__list-item "><a href="work.html" class="nav__link">Work</a></li>
                 <li class="nav__list-item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
                 <li class="nav__list-item"><a href="skillset.html" class="nav__link">Skills Set</a></li>
                 <li class="nav__list-item"><a href="contact.html" class="nav__link">Get Intouch</a></li>
@@ -55,6 +56,43 @@
 
             <div class="resume button--small">
                 <a href="pdf/Amanda Maarman CV.pdf" target="blank" class="resume__link button--small__link">View Full Profile PDF</a>
+            </div>
+        </section>
+
+        <section class="contact__section">
+
+            <div class="button button--small inner__container" id="mybutton">
+                <a href="#" class="contact__button button--small__link">Get Intouch</a>
+            </div>
+
+            <div class="modal" id="mymodal">
+                <div class="modal__title">
+                    <h2>Send me an email</h2>
+                    <button class="btnc" id="btnclose">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <form action="contact.php" method="POST" id="form">
+                    <div class="form__input">
+                        <input type="text" placeholder="name" name="user_name" required>
+                    </div>
+                    <div class="form__input">
+                        <input type="email" placeholder="email" name="user_mail" required>
+                    </div>
+
+                    <div class="textarea">
+                        <textarea placeholder="message" name="user_message"></textarea>
+                    </div>
+
+                    <div class="submit">
+                        <input type="button" name="submit" class="submit__button" value="SUBMIT" onclick="return confirm('Are you sure?')">
+                    </div>
+                </form>
+            </div>
+
+            <div class="embeded__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52973.27728717209!2d18.844294!3d-33.919779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcdb284a7419115%3A0xfdec21bf31df56e9!2sKayamandi%2C+Stellenbosch%2C+7600!5e0!3m2!1sen!2sza!4v1516196978232" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </section>
     </div>

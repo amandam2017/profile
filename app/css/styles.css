@@ -134,7 +134,7 @@ p {
 .burger {
   float: right;
   display: block;
-  padding: 10px;
+  padding: 25px 10px;
   background: transparent; }
   @media (min-width: 768px) {
     .burger {
