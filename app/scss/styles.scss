@@ -36,6 +36,29 @@ body {
     }
 }
 
+.col-4{
+    width: 100%;
+    float: none;
+
+    @include bp (md) {
+        width: 50%;
+        float: left;
+        padding: 10px;
+    }
+
+    @include bp (lg) {
+        width: 25%;
+        float: left;
+        padding: 10px;
+    }
+
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
 p,h1,h2,h3,h4,h5,h6 {
     margin: 0;
 }
@@ -172,24 +195,6 @@ p {
         }
     }
 
-  // .hidden-list {
-  //     padding:0;
-  //     display: none;
-
-  //     & li {
-  //       background:purple;
-  //       float: none;
-  //       padding:1px;
-  //       line-height: 0;
-  //     }    
-  // } 
-  
-  // .nav__list li:hover .hidden-list {
-  //     display: block;
-  //     height:0;
-  // }
-
-
   .nav:after {
       content: "";
       display: table;
@@ -221,11 +226,6 @@ p {
       display:table;
       clear:both;
     }
-
-
-
-
-
 
 // I don't know where it fits I am coming back to this
 
@@ -303,85 +303,6 @@ p {
 .section__background{
     background-image: url('../images/section.png');
     background-color: rgba(35, 50, 103, 0.9);
-}
-
-.academic__section {
-    width: 100%;
-    background-color: #233267;
-    color: #fff;
-    padding: 30px 0;
-}
-
-.academic__images{
-    width: 100%;
-    text-align: center;
-
-    @include bp(md) {
-        width: 490px;
-        margin: 0 auto;
-    }
-
-    img{
-        display: inline-block;
-    }
-}
-
-.achievement__section{
-    height: 100%;
-}
-
-.skillset__section{
-    background-color: #fff;
-    padding: 30px 0;
-    height: 100%;
-    // width: 100%;
-
-    @include bp(lg) {
-        width: 100%;
-    }
-}
-
-.skillset__languages{
-    width: 100%;
-
-    .language{
-        border: 1px solid #ccc;
-        float: left;
-        // height: 100px;
-        padding: 5px;
-        margin: 20px 0;
-
-        &__image{
-            width: 87.5px;
-            height: 87.5px;
-            margin-right: 10px;
-            float: left;
-            color: #e93e23;
-
-            img{
-                max-width: 100%;
-                max-height: 100%;
-            }
-        }
-
-        span{
-            background: #233267;
-            color: #fff;
-            font-weight: bold;
-            float: right;
-            width: 87.5px;
-            height: 87.5px;
-            display: inline-block;
-            text-align: center;
-            line-height: 87.5px;
-            font-size: 11px;
-        }
-
-        p{
-            display: block;
-            font-size: 12px;
-        }
-    }
 }
 
 .contact__section{

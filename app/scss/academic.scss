@@ -19,9 +19,27 @@ body {
 
 }
 
-.academic__section{
-	color: #fff;
+.academic__section {
+    width: 100%;
+    background-color: #233267;
+    color: #fff;
+    padding: 30px 0;
+    color: #fff;
 	height: 100%;
+}
+
+.academic__images{
+    width: 100%;
+    text-align: center;
+
+    @include bp(md) {
+        width: 490px;
+        margin: 0 auto;
+    }
+
+    img{
+        display: inline-block;
+    }
 }
 
 .academic-curriculumn__section{
@@ -48,38 +66,69 @@ body {
 		}
 }
 
-.col-3{
-	width: 100%;
 
-	@include bp(lg) {
-		width: 33.33%;
-		float: left;
-	}
+.skillset__section{
+    background-color: #fff;
+    padding: 30px 0;
+    height: 100%;
+    // width: 100%;
 
-	&:after{
-		content: "";
-		display: table;
-		clear: both;
-	}
+    @include bp(lg) {
+        width: 100%;
+    }
 }
 
-.achievement{
-	width: 100%;
-	max-height: 100%;
+.skillset__languages{
+    width: 100%;
 
-	&__image{
-			padding: 10px;
+    .language{
+        border: 1px solid #ccc;
+        float: left;
+        // height: 100px;
+        padding: 5px;
+        margin: 20px 0;
+        cursor: pointer;
+        opacity: .5;
 
-			img{
-				width: 100%;
-			}
+        &:hover{
+            opacity: 10;
+            box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+            box-shadow:  0.5em -0.5em 0.4em red,
+                         0.5em  0.5em 0.4em gold,
+                        -0.5em  0.5em 0.4em lime,
+                        -0.5em -0.5em 0.4em blue;
+        }
 
-			&:hover{
-				opacity: .5;
-			}
-	}
+        &__image{
+            width: 87.5px;
+            height: 87.5px;
+            margin-right: 10px;
+            float: left;
+            color: #e93e23;
 
-	.inner__container{
-		height: 100%;
-	}
+            img{
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        span{
+            background: #233267;
+            color: #fff;
+            font-weight: bold;
+            float: right;
+            width: 87.5px;
+            height: 87.5px;
+            display: inline-block;
+            text-align: center;
+            line-height: 87.5px;
+            font-size: 11px;
+        }
+
+        p{
+            display: block;
+            font-size: 12px;
+        }
+    }
 }
+

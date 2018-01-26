@@ -1,0 +1,38 @@
+@import '../scss/mixins'; 
+
+.col-3{
+	width: 100%;
+
+	@include bp(lg) {
+		width: 33.33%;
+		float: left;
+	}
+
+	&:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+
+.recent-build__section{
+	width: 100%;
+	max-height: 100%;
+}
+
+.recent-build__image{
+		padding: 10px;
+
+		&:hover{
+			
+		}
+
+		img{
+			width: 100%;
+		}
+	}
+
+	.inner__container{
+		height: 100%;
+	}

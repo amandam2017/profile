@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>academic</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/academic.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/components.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div onclick="myFunction()" class="burger">
+            <div class="burger__item"></div>
+            <div class="burger__item"></div>
+            <div class="burger__item"></div>
+        </div>
+
+        <div class="header__logo">
+            <div class="logo__image">
+                <img src="images/logo.png">
+            </div>
+            <!-- <h4>Amanda Maarman</h4> -->
+        </div>
+
+        <nav id="newpost" class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__list-item"><a href="about.html" class="nav__link">About</a></li>
+                <li class="nav__list-item active"><a href="academic.html" class="nav__link">Academic</a></li>
+                <li class="nav__list-item"><a href="achievements.html" class="nav__link">Achievements</a></li>
+                <li class="nav__list-item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                <li class="nav__list-item"><a href="skillset.html" class="nav__link">Skills Set</a></li>
+                <li class="nav__list-item"><a href="contact.html" class="nav__link">Get Intouch</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="head__title">
+                <h4 class="head__title--left">UI Overview</h4>
+                <h4 class="head__title--right">Dashboard UI Kit - Update</h4>
+                <!-- <span>janlosert.com/store</span> -->
+            </div>
+
+            <section class="inputs">
+                <h1>Form Elements</h1>
+                <p>This is about inputs, buttons, textareas. Served on silver platter.</p>
+                <div class="col-4 inputs__text">
+                    <h3>TEXT INPUTS</h3>
+                    <form>
+                        <div class="inputs__container">
+                            <input type="text" placeholder="Placeholder" class="placeholder" />
+                        </div>
+
+                        <div class="inputs__container">
+                            <input type="text" placeholder="Hover" class="hover" />
+                        </div>
+
+                        <div class="inputs__container">
+                            <input type="text" value="Focused" class="focused" />
+                        </div>
+
+                        <div class="inputs__container">
+                            <input type="text" placeholder="Value" class="value" />
+                        </div>
+
+                        <div class="inputs__container inputs__container--error">
+                            <input type="text" placeholder="Error" />
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="inputs__container">
+                            <input type="text" placeholder="Success" class="success" />
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                        <!-- <select class="inputs__container">
+                        <option class="success">green</option>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </select> -->
+                        <input type="text" placeholder="Disabled Input" class="disabled" />
+                    </form>
+
+                </div>
+
+                <div class="col-4 inputs__text inputs__icons inputs__icons--left">
+                    <h3>WITH ICON - RIGHT</h3>
+                    <form>
+                        <div class="inputs__container">
+                            <input type="placeholder" placeholder="Placeholder" class="placeholder" />
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="inputs__container">
+                            <input type="placeholder" placeholder="Hover" class="hover" />
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="inputs__container">
+                            <input type="text" value="Focused" class="focused" />
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="inputs__container">
+                            <input type="placeholder" placeholder="Value" class="value" />
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="inputs__container">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                            <input type="placeholder" placeholder="Error" class="erro" />
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="inputs__container">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            <input type="placeholder" placeholder="Success" class="success" />
+                            <i class="fa fa-check" aria-hidden="true"></i>
+
+                        </div>
+
+                        <div class="inputs__container">
+                            <input type="placeholder" placeholder="Disabled Input" class="disabled" />
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="col-4 inputs__text inputs__icons inputs__icons--right">
+                    <h3>WITH ICON - LEFT SIDE</h3>
+                    <form>
+                        <div class="inputs__container">
+                            <input type="text" placeholder="Placeholder" class="placeholder" />
+                            <button class="search__button">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+
+                        <div class="inputs__container">
+                            <input type="text" placeholder="Hover" class="hover" />
+                            <button class="search__button">
+                                <i class="fa fa-search" aria-hidden="true"></i> 
+                            </button>
+                        </div>
+
+
+                        <div class="inputs__container">
+                            <input type="text" value="Focused" class="focused" />
+                            <button class="search__button">
+                                <i class="fa fa-search" aria-hidden="true"></i> 
+                            </button>
+                        </div>
+
+                        <div class="inputs__container">
+                            <input type="text" placeholder="Value" class="value" />
+                            <button class="search__button">
+                                <i class="fa fa-search" aria-hidden="true"></i> 
+                            </button>
+                        </div>
+
+                        <div class="inputs__container">
+                            <input type="text" placeholder="Error" class="erro" />
+                            <button class="search__button">
+                                <i class="fa fa-search" aria-hidden="true"></i> 
+                            </button>
+                        </div>
+
+                        <div class="inputs__container">
+                            <input type="text" placeholder="Success" class="success" />
+                            <button class="search__button">
+                                <i class="fa fa-search" aria-hidden="true"></i> 
+                            </button>
+                        </div>
+
+                        <div class="inputs__container inputs__search">
+                            <input type="text" placeholder="Disabled Input" class="disabled" />
+                            <button class="search__button" onclick="js/main.js">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-4 inputs__text inputs__icons">
+                    <h3>CUSTOMER FIELDS</h3>
+                    <form>
+                        <div class="inputs__container">
+                            <button class="user__button"><i class="fa fa-user" aria-hidden="true"></i></button>
+                            <input type="text" placeholder="Username" class="placeholder" />
+                        </div>
+                        <div class="inputs__container">
+                            <input type="text" name="price" placeholder="Amount" class="focused" />
+                            <span class="input-group-addon">$</span>
+                        </div>
+
+
+                        <div class="inputs__container">
+                            <input type="number" value="14,943" class="focused">
+                        </div>
+                        <div class="inputs__container">
+                            <input type="number" placeholder="499" class="value" />
+                        </div>
+
+                        <div class="inputs__container">
+                            <input type="text" placeholer="Error" class="erro" />
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="inputs__container">
+                            <input type="text" placeholder="Success" class="success" />
+                            <button>Item #1</button>
+                            <button>Item #2</button>
+                        </div>
+
+                        <div class="inputs__container">
+                            <input type="text" placeholder="Disabled Input" class="disabled" />
+                        </div>
+
+                    </form>
+                </div>
+
+            </section>
+
+            <section class="label">
+                <h1>TEXT INPUTS WITH LABELS</h1>
+                <div class="label__container label__container--left">
+                    <div class="col-3 label__column">
+                        <label>Label</label>
+                        <div class="label__input">
+                            <input type="text" placeholder="placeholder" />
+                        </div>
+                    </div>
+
+                    <div class="col-3 label__column">
+                        <label>Label</label>
+                        <div class="label__input">
+                            <input type="text" value="correct value" />
+                        </div>
+                    </div>
+
+                    <div class="col-3 label__column">
+                        <label>Label</label>
+                        <div class="label__input">
+                            <input type="text" required value="focused" />
+                        </div>
+                    </div>
+
+                    <div class="label__required">
+                        <div class="col-3 label__column">
+                            <label>Label</label>
+                            <div class="label__input label__input--info">
+                                <input type="text" required placeholder="focused" class="placeholder" />
+                                <span><i class="fa fa-info-circle" aria-hidden="true"></i>This is required field</span>
+                            </div>
+                        </div>
+
+                        <div class="col-3 label__column">
+                            <label>Label</label>
+                            <div class="label__input label__input--checked">
+                                <input type="text" required placeholder="focused" />
+                                <span><i class="fa fa-check-circle" aria-hidden="true"></i>Positive Message</span>
+                            </div>
+                        </div>
+
+                        <div class="col-3 label__column">
+                            <label>Label</label>
+                            <div class="label__input label__input--wrong">
+                                <input type="text" required placeholder="Wrong Value" class="label__input--red" />
+                                <span><i class="fa fa-times-circle" aria-hidden="true"></i>Error Notification</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="label__container label__container--right">
+                    <div class="col-1 label__column">
+                        <label>Label</label>
+                        <div class="label__input text__area">
+                            <textarea name="placeholder" cols="25" rows="6">The textarea tag defines a multi-line text input control.</textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="textarea">
+                    <div class="col-4 label__column">
+                        <label>Label</label>
+                        <div class="label__input text__area">
+                            <textarea name="" cols="25" rows="10">The textarea tag defines a multi-line text input control.</textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-4 label__column">
+                        <label>Label</label>
+                        <div class="label__input text__area">
+                            <textarea name="" cols="25" rows="10">The textarea tag defines a multi-line text input control.</textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-4 label__column">
+                        <label>Label</label>
+                        <label>-30</label>
+                        <div class="label__input text__area label__input--wrong">
+                            <textarea name="" cols="25" rows="10" class="label__input--red">The textarea tag defines a multi-line text input control.</textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-4 label__column">
+                        <label>Label</label>
+                        <div class="label__input text__area">
+                            <textarea name="" cols="25" rows="10">The textarea tag defines a multi-line text input control.</textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- <form> 
+                <input type="text" required placeholder="value"> 
+                <input id="submit" type="submit" value=""> 
+            </form> -->
+
+        </div>
+
+    </div>
+
+    <section class="buttons">
+        <div class="button-container">
+            <h1>BUTTONS</h1>
+            <div class="col-8 buttons__container buttons__container--left">
+                <div class="buttons__input">
+                    <button>button</button>
+                </div>
+                <div class="buttons__input">
+                    <button>button</button>
+                </div>
+                <div class="buttons__input">
+                    <button>button</button>
+                </div>
+                <div class="buttons__input">
+                    <button>button</button>
+                </div>
+                <div class="buttons__input">
+                    <button>button</button>
+                </div>
+                <div class="buttons__input">
+                    <button>button</button>
+                </div>
+                <div class="buttons__input">
+                    <button>button</button>
+                </div>
+            </div>
+            <div class="col-4 buttons__container buttons__container--right">
+                <div class="buttons__input">
+                    <button>button</button>
+                </div>
+                <div class="buttons__input">
+                    <button>button</button>
+                </div>
+                <div class="buttons__input">
+                    <button>button</button>
+                </div>
+                <div class="buttons__input">
+                    <button>button</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="selects">
+        <div class="container">
+            <h1>Dropdown & Selectors</h1>
+            <p>Trying to give user ability to choose from a dropdown? Here you go, all possible states for your selectors or toggles.</p>
+            <div class="col-4">
+                <form>
+                    <div class="selects__input">
+                        <input type="text" placeholder="placeholder" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="selects__input">
+                        <input type="value" value="value" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="selects__input selects__input--blue">
+                        <input type="value" value="value" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="selects__input">
+                        <input type="text" placeholder="placeholder" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4">
+                <form>
+                    <label>Label</label>
+                    <div class="selects__input">
+                        <input type="text" placeholder="placeholder" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                    <label>Label</label>
+                    <div class="selects__input">
+                        <input type="value" value="value" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                    <label>Label</label>
+                    <div class="selects__input">
+                        <input type="value" value="value" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                    <label>Label</label>
+                    <div class="selects__input">
+                        <input type="text" placeholder="placeholder" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4">
+                <form>
+                    <label>Select User</label>
+                    <div class="selects__input">
+                        <img src="images/img1.png" class="img1">
+                        <input type="text" value="Annie Cooper" class="select" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                    <label>Select Album</label>
+                    <div class="selects__input">
+                        <img src="images/img2.png" class="img2">
+                        <input type="value" value="Vacation 2017" class="vacation-select" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4">
+                <form>
+                    <label>Filter by time</label>
+                    <div class="selects__input">
+                        <input type="text" value="Aug 1, 2016-Aug 13, 2016" class="filter" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </div>
+                    <label>Select Role</label>
+                    <div class="selects__input">
+                        <input type="value" value="Administrator" class="filter" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <section class="dropdown">
+        <div class="container">
+            <h4>DROPDOWNS</h4>
+            <div class="col-4">
+                <form action="POST">
+                    <div class="dropdown__input">
+                        <input type="text" value="First" />
+                    </div>
+                    <div class="dropdown__input">
+                        <input type="text" value="Second" />
+                    </div>
+                    <div class="dropdown__input">
+                        <input type="text" value="Third" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-4">
+                <form action="POST">
+                    <div class="dropdown__input">
+                        <input type="text" value="First" />
+                    </div>
+                    <div class="dropdown__input">
+                        <input type="text" value="Second" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown__input">
+                        <input type="text" value="Third" />
+                    </div>
+                    <div class="dropdown__input">
+                        <input type="text" value="Select All" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-4">
+                <form action="POST">
+                    <div class="dropdown__input">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                        <input type="text" value="Your Account" />
+                    </div>
+                    <div class="dropdown__input">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        <input type="text" value="Settings" />
+                    </div>
+                    <div class="dropdown__input">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <input type="text" value="Hovered Item" />
+                    </div>
+                    <div class="dropdown__input">
+                        <i class="fa fa-power-off" aria-hidden="true"></i>
+                        <input type="text" value="Logout" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-4">
+                <form>
+                    <div class="dropdown__input">
+                        <input type="text" value="Mar 6, 2016" class="filter" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="container search">
+            <div class="col-4">
+                <form action="POST">
+                    <div class="dropdown__input">
+                        <input type="text" value="Search" />
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown__input">
+                        <input type="text" value="First" />
+                    </div>
+                    <div class="dropdown__input">
+                        <input type="text" value="Second" />
+                    </div>
+                    <div class="dropdown__input">
+                        <input type="text" value="Third" />
+                    </div>
+                    <div class="dropdown__input">
+                        <input type="text" value="Select All" />
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-4">
+                <form action="POST">
+                    <div class="dropdown__input">
+                        <input type="text" value="Search" />
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown__input">
+                        <input type="text" value="First" />
+                    </div>
+                    <div class="dropdown__input">
+                        <input type="text" value="Second" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown__input">
+                        <input type="text" value="Third" />
+                    </div>
+                    <div class="dropdown__input">
+                        <input type="text" value="Fourth" />
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown__input">
+                        <input type="text" value="Fifth" />
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-4">
+                <form action="POST">
+                    <div class="dropdown__input dropdown__images">
+                        <img src="images/search-img1.png">
+                        <input type="text" value="Theodore Robbins" />
+                    </div>
+                    <div class="dropdown__input dropdown__images">
+                        <img src="images/search-img2.png">
+                        <input type="text" value="Olga Allen" />
+                    </div>
+                    <div class="dropdown__input dropdown__images">
+                        <img src="images/search-img3.png">
+                        <input type="text" value="Kenneth Cole" />
+                    </div>
+                    <div class="dropdown__input dropdown__images">
+                        <img src="images/search-img4.png">
+                        <input type="text" value="Chad Parker" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="bar">
+        <div class="col-4">
+            <div class="wrapper">
+                <form>
+                    <div class="scrollbar" id="style-2">
+                        <div class="dropdown__input">
+                            <input type="text" value="Search" />
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                        <div class="dropdown__input">
+                            <input type="text" value="First" />
+                        </div>
+                        <div class="dropdown__input">
+                            <input type="text" value="Second" />
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="dropdown__input">
+                            <input type="text" value="Third" />
+                        </div>
+                        <div class="dropdown__input">
+                            <input type="text" value="Fourth" />
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="dropdown__input">
+                            <input type="text" value="Fifth" />
+                        </div>
+                        <div class="force-overflow"></div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="boxes">
+        <div class="container">
+            <div class="col-4">
+                <h4>CHECKBOXES</h4>
+                <form>
+                    <div class="boxes__input">
+                        <input type="checkbox"/>
+                        <label>Inactive</label>
+                    </div>
+                    <div class="boxes__input">
+                        <input type="checkbox" checked/>
+                        <label for="checkbox">Selected</label>
+                    </div>
+                    <div class="boxes__input">
+                        <input type="checkbox" checked class="indeterminate"/>
+                        <label for="checkbox">Indeterminate</label>
+                    </div>
+                    <div class="boxes__input">
+                        <input type="checkbox"/>
+                        <label>Disabled</label>
+                    </div>
+                    <div class="boxes__input">
+                        <input type="checkbox" checked/>
+                        <label>Dis. Selected</label>
+                    </div>
+                    <div class="boxes__input">
+                        <input type="checkbox" checked class="indeterminate"/>
+                        <label for="checkbox">Indeterminate</label>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4">
+                    <h4>RADIO BUTTONS</h4>
+                    <form>
+                        <div class="boxes__input">
+                            <input type="radio"/>
+                            <label>Inactive</label>
+                        </div>
+                        <div class="boxes__input">
+                            <input type="radio" checked/>
+                            <label for="radio">Selected</label>
+                        </div>
+                        <div class="boxes__input">
+                            <input type="radio"/>
+                            <label>Disabled</label>
+                        </div>
+                        <div class="boxes__input">
+                            <input type="radio" checked/>
+                            <label for="radio">Dis. Selected</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-4 toggle">
+                    <h4>TOGGLE BUTTONS</h4>
+                    <form>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                            </label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </form>
+                </div>
+                <div class="col-4 profile">
+                    <div class="profile__avatar" id="button">
+                        <img src="images/avatar.png">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                    <form action="POST" class="hidden" id="newpost">
+                        <div class="profile__input">
+                            <input type="text" value="Edit Profile" />
+                        </div>
+                        <div class="profile__input">
+                            <input type="text" value="View Activity" class="active" />
+                        </div>
+                        <div class="profile__input">
+                            <input type="text" value="Manage Roles" />
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </section>
+
+    <section class="pagers">
+        <div class="container">
+            <h3>Navigation, Pagination, Tabs and all Content Related Elements</h3>
+            <p>Oh I see, you wanna go all in with your dashboard. But we are prepared for that either. Think about success notifications, tooltips or even 6 types of pagination!</p>
+        </div>
+
+        <div class="col-6">
+            ff
+        </div>
+        <div class="col-6">
+            gg
+        </div>
+    </section>
+    </div>
+    <div class="push-footer">
+        <div class="social">
+            <h2>Follow & Like Me On:</h2>
+            <div class="social__icon">
+                <a href="https://www.facebook.com/" class="social__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+            <div class="social__icon">
+                <a href="https://www.linkedin.com/in/amanda-maarman-27309886/" class="social__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+            <div class="social__icon">
+                <a href="#" class="social__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="social__icon">
+                <a href="https://github.com/amandam2017" class="social__link"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__container">
+
+                <div class="col-3 footer__link">
+                    <a href="#"><a href="#">327 Watergang, Kayamandi, STELLENBOSCH, 7600</a>
+                </div>
+
+                <div class="col-3 footer__nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="my-work.html">Portfolio</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3 footer__social-icons">
+                    <a href="#">amandamaarman19911@gmail.com</a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

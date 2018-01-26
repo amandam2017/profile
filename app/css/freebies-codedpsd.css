@@ -1,0 +1,391 @@
+/*article explains how the photoshop letter spacing is converted
+https://coderwall.com/p/f332wg/convert-photoshop-letter-spacing-to-css-letter-spacing*/
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  overflow-x: hidden; }
+
+.header {
+  display: block;
+  height: 127vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .header__container {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0; }
+  .header__logo {
+    display: block;
+    height: 42px; }
+  .header__heading {
+    font-size: 40px;
+    position: absolute;
+    left: 8.5%;
+    top: 43%;
+    display: block;
+    margin: 0;
+    color: white;
+    font-weight: 300; }
+    @media (min-width: 768px) {
+      .header__heading {
+        font-size: 80px; } }
+
+.container {
+  margin: 0 auto;
+  height: 100%; }
+
+.container:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/*.header 
+  h1{
+  text-align: center;
+  font-weight: 300;
+  font-size: 80px;
+  color:#fff;
+}*/
+h4 {
+  color: #d4af37;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  padding: 80px 0 0 0;
+  margin: 0; }
+
+h1 {
+  padding: 0;
+  margin: 0;
+  color: #021725;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  text-align: center; }
+
+p {
+  color: #021725;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.9px;
+  text-align: center; }
+
+.button {
+  border: 1px solid;
+  display: block;
+  width: 100%;
+  padding: 10px 25px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  color: #021725;
+  margin: 0 auto; }
+
+.button1 {
+  border: 1px solid;
+  /* display: block; */
+  width: 100%;
+  padding: 10px 25px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  text-decoration: none;
+  /* text-align: center; */
+  color: #021725;
+  /* margin: 0 auto; */ }
+
+.service:after,
+before {
+  content: "";
+  display: table; }
+
+.service:after {
+  clear: both; }
+
+.service__container {
+  width: 100%; }
+
+.service__container:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+h3 {
+  font-size: 13px; }
+
+.col-4 {
+  width: 100%;
+  float: none; }
+  @media (min-width: 768px) {
+    .col-4 {
+      width: 50%;
+      float: left; } }
+  @media (min-width: 1024px) {
+    .col-4 {
+      width: 25%; } }
+
+.service__image {
+  width: 100%;
+  height: 300px;
+  margin: 1px;
+  display: block; }
+
+.image0ne {
+  background: url("../images/freebies-codedpsd__images/service_image1.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.imageTwo {
+  background: url("../images/freebies-codedpsd__images/service_image2.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.imageThree {
+  background: url("../images/freebies-codedpsd__images/service_image3.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.imageFour {
+  background: url("../images/freebies-codedpsd__images/service_image4.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.imageFive {
+  background: url("../images/freebies-codedpsd__images/service_image5.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.imageSix {
+  background: url("../images/freebies-codedpsd__images/service_image6.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.imageSeven {
+  background: url("../images/freebies-codedpsd__images/service_image7.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.imageEight {
+  background: url("../images/freebies-codedpsd__images/service_image8.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*styles of three columns starts here
+*/
+.three__column-container {
+  max-width: 736px;
+  margin: 0 auto;
+  /* margin: auto; */
+  padding: 0 9px 0 9px; }
+
+.three__column-container:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.four__container-title {
+  font-size: 21px;
+  color: #021725;
+  text-align: left;
+  line-height: 2.4;
+  letter-spacing: 0.05em;
+  padding: 0; }
+
+.four__container-heading {
+  text-align: left;
+  padding: 12px 0 0 0; }
+
+.three__column-container .four {
+  width: 100%;
+  line-height: 70px;
+  letter-spacing: 0.05em;
+  background-color: #f9f9f9; }
+
+.four__container {
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  width: 95%;
+  padding: 0; }
+
+.four p {
+  font-size: 13px;
+  text-align: left;
+  line-height: 23px;
+  letter-spacing: 0.05em; }
+
+.people__image--1 {
+  background-image: url("../images/freebies-codedpsd__images/img1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px; }
+
+.people__image--2 {
+  background-image: url("../images/freebies-codedpsd__images/img2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px; }
+
+.people__image--3 {
+  background-image: url("../images/freebies-codedpsd__images/img3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px; }
+
+/*three column styles ends here!
+
+/*the styles of the blog posts section starts here*/
+.two__column-container {
+  width: 100%;
+  color: #505d68;
+  margin: 0;
+  background-color: #f9f9f9;
+  height: 391px; }
+
+.two__column-container:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.two__column-left {
+  width: 100%;
+  float: none; }
+
+.two__column-left-image {
+  max-height: 258px; }
+
+.two__column-right {
+  width: 100%;
+  float: none; }
+
+.right__column-wraper {
+  width: 310px;
+  margin: 0 auto; }
+
+.two__column-container
+p {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 24.7px;
+  text-align: left;
+  padding: 0 0 60px 0; }
+
+h5 {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  line-height: 60px; }
+
+/*the styles of the blog posts section ends here*/
+/*the map and contact us styles starts here*/
+.full__width-column {
+  width: 100%;
+  text-align: center;
+  color: #505d68;
+  background-color: #f9f9f9; }
+
+.full__width-column:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.full__width-column--map {
+  width: 100%;
+  height: 296px;
+  background-image: url("../images/freebies-codedpsd__images/img5.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+h6 {
+  font-size: 19px;
+  letter-spacing: 0.57px;
+  line-height: 1.4;
+  font-weight: 300;
+  margin: 0;
+  padding: 0; }
+
+/*the map and contact us styles ends here*/
+/*footer styles starts here*/
+.footer {
+  width: 100%;
+  color: #505d68;
+  background-color: #eeeeee;
+  height: 93px; }
+
+.footer__container {
+  width: 100%;
+  padding: 0; }
+
+.footer__container:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/*fopter styles ends here*/
+@media (min-width: 768px) {
+  .four__column-container > .three {
+    width: 49.66%;
+    display: block;
+    float: left; }
+  .four p {
+    font-size: 13px;
+    text-align: left;
+    line-height: 23px;
+    letter-spacing: 0.05em; }
+  .people__image--1 {
+    height: 192px; }
+  .people__image--2 {
+    height: 192px; }
+  .people__image--3 {
+    height: 192px; }
+  .container {
+    max-width: 769px;
+    padding: 0 0 80px 0; }
+  .button {
+    width: 240px;
+    height: 58px;
+    padding: 10px 0;
+    margin: 25px auto; }
+  .three__column-container .four {
+    width: 33.333%;
+    padding: 0 5px 0 0;
+    float: left;
+    /*background-color: red;*/ }
+  .four__container {
+    background-color: #f9f9f9;
+    max-width: 208px; }
+  .two__column-left {
+    width: 50%;
+    float: left;
+    height: 100%; }
+  .left__column--image {
+    background-image: url("../images/freebies-codedpsd__images/IMG4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 390px; }
+  .two__column-right {
+    width: 50%;
+    float: right; }
+  .footer__container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 15px 0 0 0; }
+  .footer__left {
+    float: left;
+    color: #505d68; }
+  .footer__right {
+    float: right;
+    color: #505d68; } }

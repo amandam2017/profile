@@ -1,0 +1,22 @@
+.col-3 {
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .col-3 {
+      width: 33.33%;
+      float: left; } }
+  .col-3:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.recent-build__section {
+  width: 100%;
+  max-height: 100%; }
+
+.recent-build__image {
+  padding: 10px; }
+  .recent-build__image img {
+    width: 100%; }
+
+.inner__container {
+  height: 100%; }

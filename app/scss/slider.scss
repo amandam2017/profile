@@ -1,0 +1,277 @@
+.body.state--active{
+	margin: 0; padding: 0;
+
+}
+
+.outer-container{
+	background-color: #ffffff;
+	margin: auto;
+}
+
+.header{
+	max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.header-logo{
+	float: left;
+}
+
+.header-logo-figure{
+	position: absolute;
+}
+
+.header-nav-list--alt{
+	list-style-type: none;
+	display: inline-block; 
+	float: right;
+}
+
+.header-nav-item{
+	display: inline-block;
+}
+
+.header-nav-mobile-toggle{
+	display: none;
+}
+
+.nav-item-link{
+	text-decoration: none; 
+	padding-left: 10px; 
+	color: #6c6c6c; 
+	font-size: 20px;
+}
+
+.home-banner{
+	width: 100%;
+    top: 10px;
+    position: relative;
+}
+
+
+.home-banner-image{
+	width: 100%; 
+	margin-top: -5px;
+}
+
+/*.bx-wrapper .bx-prev {
+
+background: url("images./controls.png") no-repeat scroll 0 -32px rgba(0, 0, 0, 0);
+} */
+
+.bx-wrapper .bx-controls-direction a {
+	background: url("images./controls.png") no-repeat scroll 0 -32px rgba(0, 0, 0, 0);
+	text-indent: -9999px;
+}
+
+.home-banner-signup-button{
+	width: 170px; 
+	padding-left: 350px; 
+	margin-left: 200px; 
+	margin-top: -112px; 
+	position: absolute;
+	cursor: pointer;
+}
+
+.slick-prev {
+    left: 20px;
+    z-index: 1;
+}
+.slick-next {
+    right: 25px;
+}
+  
+
+.teaser-content{
+	width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.teaser-content-wraper{
+	width: 33.33%; 
+	float: left;
+	font-family: segoeWPN; 
+	text-align: center;
+}
+
+.teaser-highlights-title{
+	font-size: 20px; 
+	color: #5094f2;
+}
+
+.teaser-highlights-details{
+	font-size: 14px; 
+	color: #909090;
+}
+
+.general-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+.general-section-container{
+	max-width: 1024px;
+	margin: 0 auto;
+	padding-top: 95px;
+}
+
+.general-section-title{
+	font-family: segoeWPN; 
+	font-size: 42px; 
+	color: #6f7173;
+}
+
+.general-section-hightlights{
+	font-family: segoeWPN; 
+	font-size: 26px; 
+	color: #6f7173;
+}
+
+.general-section-description{
+	font-family: segoenWPN Light; 
+	color: #909090; 
+	font-size: 15px;
+}
+
+.general-section-image{
+	float: left; 
+	width: 50%;
+}
+
+.general-section-description-container{
+	width: 50%; 
+	float: right;
+}
+
+.footer{
+	width: 100%; 
+	
+}
+
+.footer{}
+
+.home-footer-copyright{
+	text-align: center; 
+	font-family: segoen WPN Light; 
+	font-size: 15px; 
+	color: #909090;
+}
+
+
+
+     
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 320px){
+
+	.header{
+	max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+.home-banner-image{
+	display: none;
+}
+
+.home-banner-signup-button{
+	width: 100px;
+	padding-left: 130px; 
+	position: absolute; 
+	margin-top: -35px;
+} 
+
+.header-nav-list {
+	display: none;
+}
+
+.header-nav-mobile-toggle{
+	display: block; 
+	float: right;
+}
+
+.header-nav-list.state--visible {
+	display: block;
+}
+
+.header-logo{
+	width: 80%; 
+}
+
+.header-nav-item{
+	display: block; 
+	margin-top: 35px;
+}
+
+.teaser-content-wraper{
+	width: 100%;
+	border-bottom-style: outset;
+	border-bottom-color: #cccccc;
+	border-bottom-width: thin;
+}
+
+.teaser-highlights-image{
+	float: left; 
+	width: 20%; 
+	margin-top: 15px;
+}
+
+.teaser-highlights{
+	float: right; 
+	width: 75%; 
+	text-align: start;
+}
+
+.general-section-container {
+    padding-top: 0;
+}
+
+.general-section-image{
+	width: 100%;
+ float: none;
+}
+
+.general-section-description-container{
+	width: 100%;
+}
+
+.general-section-title{
+	text-align: center; 
+	font-size: 42px;
+	color: #6f7173;
+}
+
+.general-section-description{
+	font-family: segoen WPN Light; 
+	font-size: 17px; 
+	color: #909090;
+}
+
+.home-footer-copyright{
+	font-family:segoen WPN Light; 
+	font-size: 15px; 
+	color: #909090;
+}
+
+}
+ 
