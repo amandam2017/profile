@@ -19,8 +19,32 @@ body {
   background-color: #233267;
   color: #fff;
   padding: 30px 0;
-  color: #fff;
   height: 100%; }
+
+.exhausted {
+  animation: bounceOut 5s;
+  color: #7f7f3e;
+  text-align: center; }
+
+.excited {
+  animation: bounceIn 5s;
+  color: #7f7f3e;
+  text-align: center; }
+
+.sad {
+  animation: bounceIn 15s;
+  color: #7f7f3e;
+  text-align: center; }
+
+.content {
+  animation: bounceIn 9s;
+  color: #7f7f3e;
+  text-align: center; }
+
+.sleepy {
+  animation: bounceIn 5s;
+  color: #7f7f3e;
+  text-align: center; }
 
 .academic__images {
   width: 100%;
@@ -60,16 +84,14 @@ body {
 .skillset__languages {
   width: 100%; }
   .skillset__languages .language {
-    border: 1px solid #ccc;
     float: left;
     padding: 5px;
     margin: 20px 0;
-    cursor: pointer;
     opacity: .5; }
     .skillset__languages .language:hover {
       opacity: 10;
       box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
-      box-shadow: 0.5em -0.5em 0.4em red, 0.5em  0.5em 0.4em gold, -0.5em  0.5em 0.4em lime, -0.5em -0.5em 0.4em blue; }
+      box-shadow: 0.5em -0.5em 0.4em purple, 0.5em  0.5em 0.4em green, -0.5em  0.5em 0.4em pink, -0.5em -0.5em 0.4em blue; }
     .skillset__languages .language__image {
       width: 87.5px;
       height: 87.5px;

@@ -59,3 +59,16 @@ btn.onclick = function() {
 btnclose.onclick = function() {
     mymodal.style.display = "none";
 }
+
+
+var btn = document.getElementById('contact');
+var modal = document.getElementById('mymodal');
+var btnc = document.getElementById('btnclose');
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+btnclose.onclick = function() {
+    mymodal.style.display = "none";
+}
