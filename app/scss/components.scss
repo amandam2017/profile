@@ -9,45 +9,86 @@ body {
     box-sizing: border-box;
 }
 
-// h4{
-//     text-align: left;
-//     color: #fff;
-// }
-
-h1,p{
-    color: #fff;
-}
-
-
-.head__title{
-    padding: 20px 0;
+.header{
+    padding: 0;
+    min-height: 70px;
     margin: 0;
     background: #273142;
+
+    &__title{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        &--left{
+            float: left;
+            padding: 25px 0;
+            font-size: 18px;
+        }
+        &--left:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        &--right{
+            float: right;
+            padding: 25px 0;
+            font-size: 18px;
+        }
+        &--right:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
 }
 
     .head__title--left:after{
         float: left;
         font-size: 20px;
     }
+
     .head__title--left:after{
         content: '';
         display: table;
         clear: both;
     }
 
-
     .head__title--right {
         float: right;
         font-size: 20px;
     }
+
     .head__title--right:after {
         content: '';
         display: table;
         clear: both;
     }
 
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
 
+h1{
+    margin: 0;
+    padding-top: 45px;
+    font-size: 20px;
+}
 
+p{
+    margin: 0;
+    padding-bottom: 45px;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+h3{
+    margin: 0;
+    font-size: 12px;
+    line-height: 14px;
+}
 // section {
 //     padding: 25px 0;
 // }
@@ -163,6 +204,7 @@ h1,p{
         span {
             background: yellowgreen;
         }
+
         .user__button {
             background: red;
             position: absolute;

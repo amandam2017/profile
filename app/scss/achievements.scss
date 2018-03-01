@@ -14,8 +14,10 @@
 		clear: both;
 	}
 }
+
 .achievement__section{
     height: 100%;
+    border: 3px solid red;
 }
 
 
@@ -25,6 +27,7 @@
 
 	&__image{
 			padding: 10px;
+			position: relative;
 
 			img{
 				width: 100%;
@@ -33,6 +36,13 @@
 			&:hover{
 				opacity: .5;
 			}
+	}
+
+	&__link{
+		position: absolute;
+		bottom: 30%;
+		left:25%;
+		right: 20%;
 	}
 
 	.inner__container{
