@@ -121,17 +121,21 @@ h3 {
       border: 1px solid #313d4f;
       background: #273244; }
       .inputs__text .hover:hover {
-        background: yellowgreen; }
+        background: blue; }
     .inputs__text .focused {
       border: 1px solid #1b92ed;
       background: #273244; }
     .inputs__text .value {
       border: 1px solid #1b92ed; }
+    .inputs__text .error {
+      border: 1px solid #ed1c24; }
     .inputs__text .success {
-      border: 1px solid #1bb934; }
+      border: 1px solid #1bb934;
+      color: #fff; }
     .inputs__text .disabled {
       background: #222c3c;
-      border: 1px solid #1b92ed; }
+      border: 1px solid #313d4f;
+      color: #354052; }
   .inputs__icons {
     display: block; }
     .inputs__icons--left input {

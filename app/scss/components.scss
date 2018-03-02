@@ -159,7 +159,7 @@ h3{
             border: 1px solid #313d4f;
             background: #273244;
             &:hover {
-                background: yellowgreen;
+                background: blue;
             }
         }
         .focused {
@@ -169,12 +169,17 @@ h3{
         .value {
             border: 1px solid #1b92ed;
         }
+        .error {
+            border: 1px solid #ed1c24;
+        }
         .success {
             border: 1px solid #1bb934;
+            color: $text-color;
         }
         .disabled {
             background: #222c3c;
-            border: 1px solid #1b92ed;
+            border: 1px solid #313d4f;
+            color: #354052;
         }
     }
     &__icons {

@@ -44,8 +44,8 @@
                             <input type="text" placeholder="Value" class="value" />
                         </div>
 
-                        <div class="inputs__container inputs__container--error">
-                            <input type="text" placeholder="Error" />
+                        <div class="inputs__container">
+                            <input type="text" placeholder="Error" class="error" />
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </div>
 
@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="col-4 inputs__text inputs__icons inputs__icons--left">
-                    <h3>WITH ICON - RIGHT</h3>
+                    <h3>WITH ICON - LEFT</h3>
                     <form>
                         <div class="inputs__container">
                             <input type="placeholder" placeholder="Placeholder" class="placeholder" />
@@ -87,7 +87,7 @@
 
                         <div class="inputs__container">
                             <i class="fa fa-times" aria-hidden="true"></i>
-                            <input type="placeholder" placeholder="Error" class="erro" />
+                            <input type="placeholder" placeholder="Error" class="error" />
                             <i class="fa fa-calendar" aria-hidden="true"></i>
                         </div>
 
@@ -107,7 +107,7 @@
                 </div>
 
                 <div class="col-4 inputs__text inputs__icons inputs__icons--right">
-                    <h3>WITH ICON - LEFT SIDE</h3>
+                    <h3>WITH ICON - LEFT RIGHT</h3>
                     <form>
                         <div class="inputs__container">
                             <input type="text" placeholder="Placeholder" class="placeholder" />
@@ -139,7 +139,7 @@
                         </div>
 
                         <div class="inputs__container">
-                            <input type="text" placeholder="Error" class="erro" />
+                            <input type="text" placeholder="Error" class="error" />
                             <button class="search__button">
                                 <i class="fa fa-search" aria-hidden="true"></i> 
                             </button>
@@ -164,18 +164,21 @@
                 <div class="col-4 inputs__text inputs__icons">
                     <h3>CUSTOMER FIELDS</h3>
                     <form>
-                        <div class="inputs__container">
-                            <button class="user__button"><i class="fa fa-user" aria-hidden="true"></i></button>
+                        <div class="inputs__container inputs__icons--left">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
                             <input type="text" placeholder="Username" class="placeholder" />
                         </div>
+
                         <div class="inputs__container">
                             <input type="text" name="price" placeholder="Amount" class="focused" />
-                            <span class="input-group-addon">$</span>
+                            <span class="input-group-addon"USD</span>
                         </div>
 
 
                         <div class="inputs__container">
                             <input type="number" value="14,943" class="focused">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <!-- <i class="fas fa-percent"></i> -->
                         </div>
                         <div class="inputs__container">
                             <input type="number" placeholder="499" class="value" />
