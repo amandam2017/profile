@@ -110,7 +110,6 @@ h3 {
       width: 100%;
       font-size: 14px;
       border-radius: 3px;
-      margin: 12px 0;
       padding: 12px;
       outline: none;
       background: transparent;
@@ -142,7 +141,8 @@ h3 {
       padding-left: 40px; }
   .inputs__container {
     display: block;
-    position: relative; }
+    position: relative;
+    padding: 12px 0; }
     .inputs__container--error {
       border: 1px solid #ed1c24; }
       .inputs__container--error input::placeholder {
@@ -156,7 +156,12 @@ h3 {
       border: 0;
       outline: none; }
     .inputs__container span {
-      background: yellowgreen; }
+      background: yellowgreen;
+      background: transparent;
+      position: absolute;
+      top: 26px;
+      right: 12px;
+      color: #fff; }
     .inputs__container .user__button {
       background: red;
       position: absolute;
@@ -186,6 +191,17 @@ h3 {
         right: 12px;
         display: block;
         color: #1bb934; }
+      .inputs__container .fa-times .fa-percent::before,
+      .inputs__container .fa-user-o .fa-percent::before,
+      .inputs__container .fa-check .fa-percent::before,
+      .inputs__container .fa-calendar .fa-percent::before {
+        content: '%'; }
+      .inputs__container .fa-times .fa .fa-percent,
+      .inputs__container .fa-user-o .fa .fa-percent,
+      .inputs__container .fa-check .fa .fa-percent,
+      .inputs__container .fa-calendar .fa .fa-percent {
+        font-size: 12px;
+        font-weight: normal; }
 
 .label {
   display: block; }
