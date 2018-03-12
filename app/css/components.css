@@ -59,6 +59,10 @@ h1 {
   padding-top: 45px;
   font-size: 20px; }
 
+h2 {
+  font-size: 12px;
+  color: #7f8fa4; }
+
 p {
   margin: 0;
   padding-bottom: 45px;
@@ -80,21 +84,32 @@ h3 {
   clear: both; }
 
 .col-4 {
-  width: 25%;
-  float: left; }
-
-.col-4:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.col-1 {
   width: 100%;
-  float: left; }
+  float: none; }
+  @media (min-width: 768px) {
+    .col-4 {
+      width: 50%;
+      float: left;
+      padding: 10px; } }
+  @media (min-width: 1024px) {
+    .col-4 {
+      width: 25%;
+      float: left; } }
+  .col-4:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .col-3 {
-  width: 33.33%;
-  float: left; }
+  width: 100%; }
+  @media (min-width: 768px) {
+    .col-3 {
+      width: 33.33%;
+      float: left; } }
+  .col-3:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .col-3:after {
   content: "";
@@ -393,10 +408,6 @@ h3 {
     border-radius: 50%; }
   .search .dropdown__images input {
     padding-left: 40px; }
-
-.col-4 {
-  width: 25%;
-  float: left; }
 
 .scrollbar {
   margin-left: 30px;

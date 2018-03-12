@@ -77,6 +77,11 @@ h1{
     font-size: 20px;
 }
 
+h2{
+    font-size: 12px;
+    color: #7f8fa4;
+}
+
 p{
     margin: 0;
     padding-bottom: 45px;
@@ -110,25 +115,46 @@ h3{
     clear: both;
 }
 
-.col-4 {
-    width: 25%;
-    float: left;
-}
-
-.col-4:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.col-1 {
+.col-4{
     width: 100%;
-    float: left;
+    float: none;
+
+    @include bp (md) {
+        width: 50%;
+        float: left;
+        padding: 10px;
+    }
+
+    @include bp (lg) {
+        width: 25%;
+        float: left;
+    }
+
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
+
+// .col-1 {
+//     width: 100%;
+//     float: left;
+// }
 
 .col-3 {
-    width: 33.33%;
-    float: left;
+    width: 100%;
+
+    @include bp (md) {
+        width: 33.33%;
+        float: left;
+    }
+
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 .col-3:after {
@@ -508,10 +534,7 @@ h3{
     }
 }
 // try scrollbar
-.col-4 {
-    width: 25%;
-    float: left;
-}
+
 .scrollbar {
     margin-left: 30px;
     border: 1px solid #313d4f;

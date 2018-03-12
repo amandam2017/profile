@@ -219,12 +219,10 @@ p {
   height: 100%; }
   @media (min-width: 768px) {
     .inner__container {
-      height: 55vh;
       width: 100%;
       max-width: 1000px; } }
   @media (min-width: 1024px) {
     .inner__container {
-      height: 55vh;
       width: 65%;
       max-width: 1000px; } }
 
