@@ -86,19 +86,23 @@ $nav__bg-color: rgba(35, 50, 103, 0.9);
 
   // text-align
 
-@mixin center{
+@mixin center-items {
     display: flex;
     justify-content:center;
     align-items:center;
 }
 
-@mixin section__title--center{
+@mixin text-center {
+    text-align: center;
+}
+
+@mixin section__title--center {
     text-align: center;
     // padding: 50px 0;
     // margin: 0;
 }
 
-@mixin section__title--padding{
+@mixin section__title--padding {
     padding: 15px 0 25px 0;
 }
 

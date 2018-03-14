@@ -279,6 +279,11 @@ p {
     margin: 0;
 }
 
+.text-center {
+    @include text-center;
+    margin: 0;
+}
+
 .section__title--padding {
     @include section__title--padding;
     margin: 0;
@@ -310,6 +315,7 @@ p {
 .section__background{
     background-image: url('../images/section.png');
     background-color: rgba(35, 50, 103, 0.9);
+    color: #eae7dd;
 }
 
 .contact__section{
