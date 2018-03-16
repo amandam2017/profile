@@ -96,17 +96,19 @@ a {
   display: block;
   color: #676060;
   text-align: center; }
-  .footer__nav ul li {
-    float: none;
-    padding: 0 10px;
-    list-style: none;
-    display: none; }
-    @media (min-width: 1024px) {
-      .footer__nav ul li {
-        float: left;
-        display: block; } }
-    .footer__nav ul li a {
-      margin: 20px; }
+  .footer__nav ul {
+    margin: 0; }
+    .footer__nav ul li {
+      float: none;
+      padding: 0 10px;
+      list-style: none;
+      display: none; }
+      @media (min-width: 1024px) {
+        .footer__nav ul li {
+          float: left;
+          display: block; } }
+      .footer__nav ul li a {
+        margin: 20px; }
   .footer__nav ul:after {
     content: "";
     display: table;

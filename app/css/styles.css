@@ -47,8 +47,14 @@ body {
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
-a {
+.section__about-me a {
   color: #ef4926; }
+
+.resume a {
+  color: #fff; }
+
+.read-more a {
+  color: #fff; }
 
 p {
   padding: 10px 0; }
@@ -61,117 +67,6 @@ p {
   margin: 0 auto;
   background: transparent;
   flex: 1; }
-
-.header:before {
-  content: "";
-  display: table;
-  clear: both; }
-
-.header {
-  background: rgba(35, 50, 103, 0.9);
-  margin: 0;
-  padding: 0;
-  line-height: 0; }
-  @media (min-width: 768px) {
-    .header {
-      background-color: rgba(35, 50, 103, 0.9);
-      border: none;
-      max-height: 75px; } }
-  .header__logo {
-    line-height: 24px;
-    float: left; }
-    @media (min-width: 768px) {
-      .header__logo {
-        line-height: 24px;
-        position: relative; } }
-    .header__logo .logo__image {
-      max-width: 200px; }
-      .header__logo .logo__image img {
-        width: 100%; }
-  .header:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.nav {
-  display: none;
-  text-align: center; }
-  @media (min-width: 768px) {
-    .nav {
-      display: block;
-      float: right;
-      margin-left: 10px;
-      margin-right: 40px; } }
-  .nav__list {
-    margin: 0;
-    padding: 90px 0 0 0; }
-    @media (min-width: 768px) {
-      .nav__list {
-        padding-top: 25px;
-        display: inline-block;
-        background-color: transparent; } }
-  .nav__list-item {
-    float: none;
-    display: block;
-    list-style-type: none;
-    margin-right: 0px;
-    color: rgba(35, 50, 103, 0.9);
-    border-bottom: 1px solid rgba(35, 50, 103, 0.9);
-    background-color: #fff;
-    padding: 15px; }
-    @media (min-width: 768px) {
-      .nav__list-item {
-        color: #fff;
-        font-size: 12px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        border-bottom: 0;
-        padding: 0;
-        background-color: transparent;
-        margin: 0 0 0 30px;
-        display: inline-block;
-        padding: 0; } }
-    .nav__list-item.active a {
-      background: transparent; }
-      @media (min-width: 768px) {
-        .nav__list-item.active a {
-          color: white;
-          border-bottom: 2px solid #e93e23; } }
-    .nav__list-item a {
-      display: block;
-      font-weight: 700;
-      text-decoration: none;
-      color: rgba(35, 50, 103, 0.9); }
-      @media (min-width: 768px) {
-        .nav__list-item a {
-          padding: 0;
-          line-height: 25px;
-          color: #fff; } }
-
-.nav:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.burger {
-  float: right;
-  display: block;
-  padding: 25px 10px;
-  background: transparent; }
-  @media (min-width: 768px) {
-    .burger {
-      display: none;
-      padding: 0; } }
-
-.burger__item {
-  width: 40px;
-  height: 5px;
-  background-color: #fff;
-  margin: 6px 0; }
-
-.burger:after {
-  content: "";
-  display: table;
-  clear: both; }
 
 .background {
   background-image: url("../images/img.jpg");
