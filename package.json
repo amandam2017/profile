@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is my profile that I have coded and I have not used any framework.\r As you are on the landing page, you will find a brief about me and when you click on read more button it will take you to my about me page.\r Below The about me section you will find Academic and Career History section. When you click on Academic picture it will take you to my academic page.\r Below, you will find Recent builds and when you click on each, it will take you to a new tab and you will see the whole page.\r And right underneath my recent build section, you will find Get in touch button and it will pop up a form.\r Below that section, you will see a map with my address.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +11,14 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandam2017/profile.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amandam2017/profile/issues"
+  },
+  "homepage": "https://github.com/amandam2017/profile#readme"
 }
